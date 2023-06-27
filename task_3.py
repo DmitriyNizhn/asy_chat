@@ -10,8 +10,13 @@
 придумайте как это сделать
 """
 
+
+
 words = ['attribute', 'класс', 'функция', 'type']
 
 for word in words:
-    answ = bytes(word)
-    print(answ)
+    answ = bytes(word, 'utf-8')
+    answ_type = type(answ)
+    answ_len = len(answ)
+    print(answ, answ_type, answ_len)
+

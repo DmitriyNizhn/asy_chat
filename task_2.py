@@ -14,4 +14,8 @@
 words = ['class', 'function', 'method']
 
 for word in words:
-    print(type(b'word'), len(b'word'))
+    answ = bytes(word, 'utf-8')
+    answ_type = type(answ)
+    answ_len = len(answ)
+    print(answ, answ_type, answ_len)
+
